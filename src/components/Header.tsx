@@ -23,7 +23,7 @@ function Header() {
     }
 
     return (
-        <VStack p={5}>
+        <VStack p={5} height="12vh">
             <Flex w="90%">
                 <Box boxSize="sm">
                     <Image 

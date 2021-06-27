@@ -11,3 +11,13 @@
     border-bottom-width: 3px;
     transition: border-bottom-width 200ms;
 }
+
+.content-container {
+    min-height: calc(100vh - 185px);
+}  
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
