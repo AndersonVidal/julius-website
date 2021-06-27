@@ -1,0 +1,13 @@
+.linkStyle {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(89, 85, 85);
+    font-weight: bold;
+}
+
+.linkStyle:hover {
+    border-bottom-color:#6456E2;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    transition: border-bottom-width 200ms;
+}
