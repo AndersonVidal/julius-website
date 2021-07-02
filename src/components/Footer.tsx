@@ -1,14 +1,10 @@
 import { Box, BoxProps, Image, Text, VStack } from '@chakra-ui/react';
 import logo from '../assets/logoW.png';
+import { textStyle, colors } from '../constants/Theme';
 
 const Footer = (props: BoxProps) => {
-    const textStyle = {
-        fontSize:"sm",
-        fontFamily:"sans-serif",
-        color:"#FAFAFA"
-    };
     return (
-        <Box bg="#444444" {...props}>
+        <Box bg={colors.gray.strong} {...props}>
             <VStack p={4} height="185px">
                 <Image 
                     src={logo} alt="logo" 

@@ -1,27 +1,10 @@
 import { Box, Image, VStack, Stack, Flex, Button, Spacer } from "@chakra-ui/react"
 import logo from "../assets/logo.png"
 import './header.css';
+import { buttonStyle } from '../constants/Theme';
+import { getSpacers } from '../constants/Utils';
 
 function Header() {
-    const buttonStyle = {
-        "&:hover": {
-            backgroundColor: "#8278E2",
-            color:"#FFFFFF"
-        },
-        "&:active": {
-            backgroundColor: "#4B3EBD",
-            color:"#FFFFFF"
-        }
-    };
-
-    const getSpacers = (amount: number) => {
-        let res = [];
-        for (let i = 0; i < amount; i++) {
-            res.push(<Spacer />);
-        }
-        return res;
-    }
-
     return (
         <VStack p={5} height="12vh">
             <Flex w="90%" h="8vh">
@@ -47,7 +30,7 @@ function Header() {
                 </Box>
                 <Spacer />
                 <Box p={2} className="baixarBox">
-                    <Button backgroundColor="#6456E2" color="#FAFAFA" sx={buttonStyle}>
+                    <Button sx={buttonStyle}>
                         Baixe agora
                     </Button>
                 </Box>
