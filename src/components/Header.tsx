@@ -24,8 +24,8 @@ function Header() {
 
     return (
         <VStack p={5} height="12vh">
-            <Flex w="90%">
-                <Box boxSize="sm">
+            <Flex w="90%" h="8vh">
+                <Box boxSize="sm" h="6vh" w="10vw">
                     <Image 
                         src={logo} alt="logo" 
                         fallbackSrc="https://via.placeholder.com/150" 
@@ -33,7 +33,7 @@ function Header() {
                     />
                 </Box>
                 {getSpacers(6)}
-                <Box boxSize="sm">
+                <Box boxSize="sm" h="6vh" w="24vw">
                     <Stack 
                         direction={["column", "row"]} 
                         spacing="4vw"

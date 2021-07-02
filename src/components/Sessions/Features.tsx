@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Session() {
+function Features() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Session() {
     )
 }
 
-export default Session
+export default Features
